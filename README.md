@@ -8,7 +8,7 @@
 
 4 ->
 
-5 ->
+5 -> Stem cell
 
 6 -> terminal digestion cell
 
