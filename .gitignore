@@ -1,4 +1,4 @@
 *.h5ad
 miki/*
 !miki/*.ipynb
-!miki/figs/
+!miki/figs/suberites_domuncula_cytotrace_SUB4.h5ad
