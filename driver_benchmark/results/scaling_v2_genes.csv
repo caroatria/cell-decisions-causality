@@ -1,0 +1,10 @@
+variant,genes,cells,total_s
+exact,100,500,0.4
+exact,200,500,1.8
+exact,400,500,9.6
+exact,800,500,56.9
+exact,1600,500,308.4
+"fast (300 genes, 300 cells)",400,500,9.6
+"fast (300 genes, 300 cells)",800,500,25.8
+"fast (300 genes, 300 cells)",1600,500,102.8
+"fast (300 genes, 300 cells)",3200,500,458.8

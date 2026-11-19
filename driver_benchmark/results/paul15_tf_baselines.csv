@@ -1,0 +1,15 @@
+decision,method,n_genes,n_core,n_all,expected_core_hits@20_random,core_hits@10,all_hits@10,core_hits@20,all_hits@20,core_hits@50,all_hits@50,core_median_rank,all_median_rank,ranks,top10
+ErMk,fate_corr,146,3,12,0.411,2,3,2,7,2,11,10.0,17.5,Klf1:2 Fli1:10 Myb:74 Gata1:12 Zfpm1:44 Nfe2:21 Tal1:31 Meis1:15 Runx1:20 Gfi1b:13 Pbx1:5 Ikzf1:27,Mthfd1 Klf1 Gata2 Sod1 Pbx1 Ctbp1 Mef2c Nfe2l2 Ssbp3 Fli1
+ErMk,fate_corr_decision_region,146,3,12,0.411,1,1,1,3,3,11,28.0,29.0,Klf1:2 Fli1:28 Myb:30 Gata1:27 Zfpm1:56 Nfe2:13 Tal1:45 Meis1:34 Runx1:21 Gfi1b:16 Pbx1:46 Ikzf1:36,Mthfd1 Klf1 Sox4 Sod1 Myc Hspa5 Gata2 Nfe2l2 Ctbp1 Ssbp3
+ErMk,absorption_corr_decision_region,146,3,12,0.411,1,2,1,4,2,8,21.0,31.5,Klf1:3 Fli1:75 Myb:21 Gata1:52 Zfpm1:78 Nfe2:20 Tal1:104 Meis1:35 Runx1:28 Gfi1b:17 Pbx1:7 Ikzf1:37,Mthfd1 Myc Klf1 Sox4 Mef2c Gata2 Pbx1 Sod1 Smarca4 Hspa5
+ErMk,de_terminal,146,3,12,0.411,1,3,2,7,3,11,20.0,18.5,Klf1:1 Fli1:20 Myb:50 Gata1:4 Zfpm1:55 Nfe2:21 Tal1:34 Meis1:30 Runx1:12 Gfi1b:15 Pbx1:6 Ikzf1:17,Klf1 Mthfd1 Gata2 Gata1 Ssbp3 Pbx1 Tagln2 Sod1 Pml H2afy
+ErMk,rf_shap_fixed,146,3,12,0.411,1,4,1,4,3,7,21.0,29.5,Klf1:1 Fli1:27 Myb:21 Gata1:6 Zfpm1:111 Nfe2:5 Tal1:111 Meis1:32 Runx1:9 Gfi1b:111 Pbx1:51 Ikzf1:52,Klf1 H2afy Mthfd1 Gata2 Nfe2 Gata1 Ssbp3 Etv6 Runx1 Myc
+ErMk,obs_counterfactual,146,3,12,0.411,1,1,1,1,2,5,74.5,74.5,Klf1:1 Fli1:74 Myb:74 Gata1:74 Zfpm1:74 Nfe2:74 Tal1:74 Meis1:74 Runx1:74 Gfi1b:74 Pbx1:74 Ikzf1:74,Klf1 Gata2 Arid5a Arid5b Batf3 Bcl3 Bclaf1 Boll Bptf Cbfb
+ErMk,random,146,3,12,0.411,0,0,0,2,1,4,52.0,72.5,Klf1:134 Fli1:52 Myb:38 Gata1:42 Zfpm1:138 Nfe2:70 Tal1:105 Meis1:144 Runx1:12 Gfi1b:118 Pbx1:75 Ikzf1:20,Tcf12 Ywhaz Stat3 Hoxa7 Aff4 Rreb1 Cbfb Zbtb20 Chd2 Smarca4
+MoNeu,fate_corr,146,4,7,0.548,3,3,3,4,4,7,4.0,17.0,Irf8:2 Cebpe:3 Gfi1:5 Klf4:22 Sfpi1:25 Cebpa:17 Egr1:45,H2afy Irf8 Cebpe Prdx5 Gfi1 P4hb Ets1 Smarcc1 Sox4 Lmo2
+MoNeu,fate_corr_decision_region,146,4,7,0.548,0,0,0,1,1,3,84.5,71.0,Irf8:22 Cebpe:71 Gfi1:98 Klf4:141 Sfpi1:20 Cebpa:32 Egr1:141,H2afy Rab18 Mthfd1 Tbl1xr1 Nucb1 Klf1 Bclaf1 Smarcc1 Hspa5 Cux1
+MoNeu,absorption_corr_decision_region,146,4,7,0.548,1,2,1,3,1,3,113.0,112.0,Irf8:2 Cebpe:112 Gfi1:114 Klf4:140 Sfpi1:8 Cebpa:12 Egr1:140,H2afy Irf8 Hp1bp3 Satb1 Gata1 Zbtb1 Rara Sfpi1 Lrrfip1 Zkscan1
+MoNeu,de_terminal,146,4,7,0.548,3,3,3,3,4,6,7.5,22.0,Irf8:2 Cebpe:5 Gfi1:10 Klf4:32 Sfpi1:42 Cebpa:22 Egr1:125,H2afy Irf8 Prdx5 P4hb Cebpe Hspa5 Sod1 Smarcc1 Ctbp1 Gfi1
+MoNeu,rf_shap_fixed,146,4,7,0.548,1,2,3,4,4,6,14.5,15.0,Irf8:2 Cebpe:14 Gfi1:15 Klf4:40 Sfpi1:24 Cebpa:8 Egr1:134,H2afy Irf8 Gata2 Prdx5 Hspa5 P4hb Smarcc1 Cebpa Runx1 Nfe2
+MoNeu,obs_counterfactual,146,4,7,0.548,1,2,1,2,3,5,86.0,86.0,Irf8:9 Cebpe:86 Gfi1:86 Klf4:86 Sfpi1:86 Cebpa:3 Egr1:86,H2afy Prdx5 Cebpa Hspa5 Zfp90 Myb Smarcc1 Rps10 Irf8 Lmo2
+MoNeu,random,146,4,7,0.548,0,0,0,0,2,2,70.5,104.0,Irf8:21 Cebpe:37 Gfi1:104 Klf4:115 Sfpi1:60 Cebpa:108 Egr1:121,Tcf12 Ywhaz Stat3 Hoxa7 Aff4 Rreb1 Cbfb Zbtb20 Chd2 Smarca4

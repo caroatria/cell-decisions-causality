@@ -1,0 +1,23 @@
+parameter,setting,chosen,mean_auprc,wins_chosen,losses_chosen,wilcoxon_p
+Timing rule,with,True,0.746,,,
+Timing rule,without,False,0.42,23.0,4.0,0.00014699805462298738
+Rollout steps K,0,False,0.319,24.0,3.0,1.6794141875303717e-05
+Rollout steps K,1,False,0.689,8.0,7.0,0.42652824883677154
+Rollout steps K,3,True,0.746,,,
+Rollout steps K,5,False,0.769,4.0,9.0,0.221330082993901
+Rollout steps K,10,False,0.718,9.0,9.0,0.6790730414946473
+Onset threshold,0.1,False,0.705,14.0,8.0,0.32207523283525596
+Onset threshold,0.2,True,0.746,,,
+Onset threshold,0.3,False,0.755,6.0,11.0,0.4775980566135104
+Pseudotime,DPT,True,0.746,,,
+Pseudotime,shifted root,False,0.643,16.0,6.0,0.009850910466175594
+Pseudotime,PCA dist.,False,0.559,17.0,5.0,0.003301864483880959
+Pseudotime,true time,False,0.602,15.0,8.0,0.026398980713274567
+Cells intervened on,undecided,True,0.746,,,
+Cells intervened on,all,False,0.747,6.0,3.0,0.3742593192802244
+Scoring rule,per-fate rank,True,0.746,,,
+Scoring rule,max shift,False,0.711,9.0,8.0,0.14213341385683462
+Fate predictor,LR,True,0.746,,,
+Fate predictor,PCA + LR,False,0.769,3.0,4.0,0.23672357063785732
+Fate predictor,soft labels,False,0.741,7.0,7.0,0.7298909084206947
+Fate predictor,graph,False,0.688,12.0,5.0,0.05521337554271477

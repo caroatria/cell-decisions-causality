@@ -1,0 +1,3 @@
+decision,method,n_genes,n_core,n_all,expected_core_hits@20_random,core_hits@10,all_hits@10,core_hits@20,all_hits@20,core_hits@50,all_hits@50,core_median_rank,all_median_rank,ranks,top10,seconds
+ErMk,CellRank,1501,3,12,0.04,1,2,1,2,1,2,65.0,126.5,Klf1:6 Fli1:65 Myb:235 Gata1:99 Zfpm1:612 Nfe2:206 Tal1:367 Meis1:64 Runx1:122 Gfi1b:131 Pbx1:9 Ikzf1:185,Serpina3f Car1 Ermap Mt2 Mt1 Klf1 Itga2b Fam132a Pbx1 Zyx,11.8
+MoNeu,CellRank,1501,4,7,0.053,1,1,1,1,2,2,42.0,70.0,Irf8:2 Cebpe:29 Gfi1:55 Klf4:70 Sfpi1:1183 Cebpa:817 Egr1:473,Emb Irf8 Pglyrp1 1100001G20Rik H2afy Tuba1b Lgals1 Fcnb Ly86 Srgn,11.3

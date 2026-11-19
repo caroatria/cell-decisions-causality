@@ -1,0 +1,9 @@
+decision,readout,n_genes,n_core,n_all,expected_core_hits@20_random,core_hits@10,all_hits@10,core_hits@20,all_hits@20,core_hits@50,all_hits@50,core_median_rank,all_median_rank,ranks,baseline
+ErMk,logreg,146,3,12,0.411,1,5,1,5,2,9,21.5,22.5,Klf1:21 Fli1:9 Myb:51 Gata1:61 Zfpm1:23 Nfe2:37 Tal1:9 Meis1:1 Runx1:29 Gfi1b:5 Pbx1:5 Ikzf1:59,"{'Ery': 0.98, 'Mk': 0.02}"
+ErMk,pca_logreg,146,3,12,0.411,1,5,1,6,3,10,23.5,21.5,Klf1:23 Fli1:7 Myb:37 Gata1:64 Zfpm1:19 Nfe2:39 Tal1:9 Meis1:1 Runx1:33 Gfi1b:5 Pbx1:9 Ikzf1:59,"{'Ery': 0.96, 'Mk': 0.04}"
+ErMk,soft_logreg,146,3,12,0.411,0,4,1,5,2,10,21.5,22.5,Klf1:21 Fli1:17 Myb:104 Gata1:67 Zfpm1:23 Nfe2:39 Tal1:9 Meis1:1 Runx1:29 Gfi1b:5 Pbx1:5 Ikzf1:49,"{'Ery': 1.0, 'Mk': 0.0}"
+ErMk,knn_absorb,146,3,12,0.411,0,3,1,5,3,11,25.5,24.5,Klf1:25 Fli1:13 Myb:43 Gata1:62 Zfpm1:19 Nfe2:33 Tal1:5 Meis1:1 Runx1:37 Gfi1b:9 Pbx1:23 Ikzf1:46,"{'Ery': 1.0, 'Mk': 0.0}"
+MoNeu,logreg,146,4,7,0.548,1,1,1,2,2,4,69.0,32.5,Irf8:1 Cebpe:32 Gfi1:105 Klf4:113 Sfpi1:11 Cebpa:21 Egr1:113,"{'Mo': 1.0, 'Neu': 0.0}"
+MoNeu,pca_logreg,146,4,7,0.548,1,1,1,2,2,3,69.0,57.5,Irf8:1 Cebpe:133 Gfi1:24 Klf4:113 Sfpi1:11 Cebpa:57 Egr1:118,"{'Mo': 1.0, 'Neu': 0.0}"
+MoNeu,soft_logreg,146,4,7,0.548,2,2,2,3,2,3,59.5,71.5,Irf8:3 Cebpe:9 Gfi1:111 Klf4:109 Sfpi1:18 Cebpa:71 Egr1:104,"{'Mo': 0.79, 'Neu': 0.21}"
+MoNeu,knn_absorb,146,4,7,0.548,1,1,1,2,2,4,68.0,47.5,Irf8:5 Cebpe:47 Gfi1:111 Klf4:88 Sfpi1:12 Cebpa:23 Egr1:88,"{'Mo': 0.73, 'Neu': 0.27}"

@@ -1,0 +1,7 @@
+,,,auprc_vs_markers,auprc_vs_markers,chance_vs_markers,chance_vs_markers,auprc_vs_fast_targets,auprc_vs_fast_targets,chance_vs_fast_targets,chance_vs_fast_targets,auprc_all,auprc_all,chance_all,chance_all,prec_at_k,prec_at_k,best_driver_rank,best_driver_rank
+,,,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+model,decision,method,,,,,,,,,,,,,,,,
+BF,D1,OURS_timing_cf,0.653,0.246,0.077,0.0,0.69,0.227,0.167,0.0,0.653,0.246,0.021,0.0,0.5,0.354,1.4,0.894
+CBF,D1,OURS_timing_cf,0.695,0.103,0.143,0.0,0.75,0.083,0.286,0.0,0.673,0.112,0.019,0.0,0.5,0.0,1.0,0.0
+CBF,D2,OURS_timing_cf,0.645,0.286,0.091,0.0,0.702,0.256,0.167,0.0,0.612,0.279,0.019,0.0,0.5,0.354,1.6,0.894
+TF,D1,OURS_timing_cf,0.806,0.107,0.091,0.0,0.806,0.107,0.167,0.0,0.806,0.107,0.03,0.0,0.6,0.149,1.0,0.0

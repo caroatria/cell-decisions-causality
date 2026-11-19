@@ -1,0 +1,5 @@
+decision,method,n_genes,n_core,n_all,expected_core_hits@20_random,core_hits@10,all_hits@10,core_hits@20,all_hits@20,core_hits@50,all_hits@50,core_median_rank,all_median_rank,ranks,top10,seconds
+ErMk,CEFCON,1501,3,12,0.04,2,5,3,7,3,7,7.0,12.0,Klf1:13 Fli1:7 Myb:1 Gata1:3 Zfpm1:94 Nfe2:109 Tal1:10 Meis1:125 Runx1:106 Gfi1b:5 Pbx1:11 Ikzf1:122,Myb Gata2 Gata1 Cux1 Gfi1b Lmo2 Fli1 Zbtb7a Tgfb1 Tal1,0.0
+ErMk,CellOracle,1501,3,12,0.04,2,5,2,6,3,9,8.0,20.5,Klf1:1 Fli1:37 Myb:8 Gata1:4 Zfpm1:800 Nfe2:7 Tal1:3 Meis1:74 Runx1:43 Gfi1b:15 Pbx1:79 Ikzf1:26,Klf1 Gata2 Tal1 Gata1 Bclaf1 Zbtb7a Nfe2 Myb Klf13 Lmo2,498.1
+MoNeu,CEFCON,1501,4,7,0.053,0,1,2,3,2,3,57.0,96.0,Irf8:18 Cebpe:96 Gfi1:13 Klf4:121 Sfpi1:1353 Cebpa:9 Egr1:1353,Myc Tbl1xr1 Gata2 Stat3 Hspa5 Runx1 Sox4 Smarca4 Cebpa Rrbp1,5193.4
+MoNeu,CellOracle,1501,4,7,0.053,1,3,1,3,1,3,80.0,73.0,Irf8:6 Cebpe:87 Gfi1:73 Klf4:89 Sfpi1:4 Cebpa:9 Egr1:97,Gata2 Nfe2 Elf1 Sfpi1 Gfi1b Irf8 Hlf Stat5a Cebpa Cux1,495.1

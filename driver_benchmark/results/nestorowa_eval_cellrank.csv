@@ -1,0 +1,3 @@
+method,ranked_among,n_genes,n_core,n_all,expected_core_hits@20_random,core_hits@10,all_hits@10,core_hits@20,all_hits@20,core_hits@50,all_hits@50,core_median_rank,all_median_rank,ranks,top10,seconds
+CellRank,all genes,1522,6,17,0.079,2,2,3,4,4,8,28.0,52.0,Gata1:4 Klf1:1 Tal1:41 Spi1:15 Cebpa:66 Ikzf1:524 Gata2:86 Zfpm1:21 Nfe2:450 Lmo2:359 Myb:301 Gfi1b:11 Fli1:52 Irf8:48 Gfi1:100 Cebpb:269 Satb1:28,Klf1 Mfsd2b Aqp1 Gata1 Ca1 Blvrb Ces2g Ntrn4it1 Mt1 Sphk1,0.0
+CellRank,TFs,165,6,17,0.727,4,8,5,12,5,16,6.0,11.0,Gata1:2 Klf1:1 Tal1:8 Spi1:4 Cebpa:12 Ikzf1:51 Gata2:15 Zfpm1:5 Nfe2:44 Lmo2:39 Myb:35 Gfi1b:3 Fli1:11 Irf8:10 Gfi1:17 Cebpb:31 Satb1:6,Klf1 Gata1 Gfi1b Spi1 Zfpm1 Satb1 Hlf Tal1 Irf1 Irf8,0.0

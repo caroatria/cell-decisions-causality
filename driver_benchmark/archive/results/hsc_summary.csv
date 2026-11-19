@@ -1,0 +1,11 @@
+method,D1,D2,D3,MEAN
+ORACLE_early_true_fate,0.784,0.403,0.69,0.626
+OURS_timing_cf,0.7,0.74,0.518,0.653
+PROBE_interventional_linear,0.389,0.538,0.319,0.415
+absorption_corr_decision_region,0.422,0.247,0.526,0.398
+de_terminal,0.56,0.428,0.467,0.485
+fate_corr,0.422,0.404,0.635,0.487
+fate_corr_decision_region,0.305,0.233,0.643,0.394
+obs_counterfactual,0.356,0.39,0.707,0.484
+random,0.146,0.183,0.27,0.2
+rf_shap_fixed,0.657,0.376,0.536,0.523

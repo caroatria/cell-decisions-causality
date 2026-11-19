@@ -1,0 +1,12 @@
+variant,genes,cells,total_s
+exact (before speed-ups),100,500,1.5
+exact (before speed-ups),200,500,5.7
+exact (before speed-ups),400,500,31.8
+exact (before speed-ups),800,500,178.6
+exact (after speed-ups),200,500,7.2
+"fast: 100 candidate genes, 150 cells",200,500,1.9
+exact (after speed-ups),400,500,26.9
+"fast: 100 candidate genes, 150 cells",400,500,6.2
+"fast: 100 candidate genes, 150 cells",800,500,25.3
+"fast: 100 candidate genes, 150 cells",2000,500,188.5
+"fast: 100 candidate genes, 150 cells",4000,500,870.0

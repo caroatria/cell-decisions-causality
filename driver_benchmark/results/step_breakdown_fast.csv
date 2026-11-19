@@ -1,0 +1,3 @@
+genes,total_s,1 pseudotime (DPT),2-3 fate classifier + undecided cells,4 gene onsets (timing rule),5a now->later pairs,5b forward model (Lasso per gene),candidate selection,6 interventions + fast-forward,other
+400,21.4,0.1,0.0,0.0,0.0,2.5,0.0,18.6,0.2
+1000,120.6,0.1,0.0,0.0,0.0,32.9,0.0,87.1,0.4

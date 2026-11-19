@@ -1,0 +1,7 @@
+decision,variant,name,n_genes,n_core,n_all,expected_core_hits@20_random,core_hits@10,all_hits@10,core_hits@20,all_hits@20,core_hits@50,all_hits@50,core_median_rank,all_median_rank,ranks,top10,seconds
+ErMk,B,TF candidates,1501,3,12,0.04,1,4,1,6,3,10,40.0,23.5,Klf1:40 Fli1:10 Myb:44 Gata1:54 Zfpm1:13 Nfe2:38 Tal1:4 Meis1:1 Runx1:34 Gfi1b:11 Pbx1:3 Ikzf1:68,Meis1 Mef2c Pbx1 Tal1 Sod1 P4hb Lrrfip1 Mycn Stat3 Fli1,258.4
+ErMk,C,TF candidates + TF regulators,1501,3,12,0.04,1,5,1,5,2,9,28.0,25.0,Klf1:28 Fli1:9 Myb:117 Gata1:53 Zfpm1:22 Nfe2:50 Tal1:8 Meis1:1 Runx1:47 Gfi1b:7 Pbx1:4 Ikzf1:60,Meis1 Mef2c Lrrfip1 Pbx1 Elf1 Gata2 Gfi1b Tal1 Fli1 Sod1,154.7
+ErMk,A,"exact (all genes, all cells)",1501,3,12,0.04,0,1,0,1,0,2,347.0,215.5,Klf1:347 Fli1:121 Myb:391 Gata1:512 Zfpm1:133 Nfe2:336 Tal1:70 Meis1:5 Runx1:298 Gfi1b:124 Pbx1:43 Ikzf1:625,Rab37 F2r Lat Ifitm1 Meis1 Nkg7 Coro1a Treml1 Kctd1 Ptprcap,2530.3
+MoNeu,B,TF candidates,1501,4,7,0.053,0,1,1,2,2,4,55.5,49.0,Irf8:13 Cebpe:49 Gfi1:62 Klf4:819 Sfpi1:8 Cebpa:23 Egr1:819,Hp1bp3 Ets1 Prdx5 Hspa5 Pou2f2 Irf9 Ikzf1 Sfpi1 Smarcc1 Ctbp1,66.3
+MoNeu,C,TF candidates + TF regulators,1501,4,7,0.053,1,2,1,2,1,3,71.5,51.0,Irf8:1 Cebpe:92 Gfi1:51 Klf4:819 Sfpi1:9 Cebpa:41 Egr1:819,Irf8 Hp1bp3 Hspa5 Ets1 Pou2f2 Ikzf1 P4hb Klf1 Sfpi1 Aff4,43.7
+MoNeu,A,"exact (all genes, all cells)",1501,4,7,0.053,0,0,0,0,0,0,516.0,449.0,Irf8:101 Cebpe:449 Gfi1:583 Klf4:1465 Sfpi1:60 Cebpa:212 Egr1:1465,Zfand3 Gbp10 1100001G20Rik Pglyrp1 Gpr97 Npc2 Gstm1 Cmtm7 Tmsb10 Arhgap17,548.5

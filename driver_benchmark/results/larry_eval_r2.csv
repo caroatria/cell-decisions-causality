@@ -1,0 +1,3 @@
+method,ranked_among,auprc_early_vs_late,chance,spearman_with_oracle,early_in_top50,n_genes,n_core,n_all,expected_core_hits@20_random,core_hits@10,all_hits@10,core_hits@20,all_hits@20,core_hits@50,all_hits@50,core_median_rank,all_median_rank,ranks,top10,seconds
+CellRank,all genes,0.31399739276523486,0.2,0.3475168850790602,15,1520,4,12,0.053,0,0,0,0,3,3,41.5,177.0,Irf8:82 Cebpe:50 Gfi1:33 Klf4:28 Spi1:467 Cebpa:214 Egr1:915 Egr2:259 Nab2:542 Zeb2:140 Cebpb:107 Mafb:228,Ctsc Mmp8 Lpl S100a4 Ms4a6d Ms4a6c Ctss Wfdc17 Olfm1 Ccr2,16.7
+CellRank,TFs,0.5042535821666256,0.25,0.43440230774279365,10,125,4,11,0.64,4,5,4,7,4,10,3.5,11.0,Irf8:6 Cebpe:4 Gfi1:3 Klf4:2 Spi1:44 Cebpa:20 Egr1:78 Egr2:27 Zeb2:11 Cebpb:8 Mafb:22,Dab2 Klf4 Gfi1 Cebpe Ltf Irf8 Jun Cebpb Pou2f2 Tcf7l2,16.7
