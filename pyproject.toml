@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driverbench"
+version = "0.2.0"
+description = "Driver-vs-marker benchmark and timing-constrained interventional counterfactuals for cell-fate driver genes"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

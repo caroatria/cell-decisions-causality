@@ -1,6 +1,6 @@
 # Archive
 
-Superseded work, kept for reference. Nothing here is used by the current pipeline in `driver_benchmark/`.
+Superseded work, kept for reference. Nothing here is used by the current pipeline (repository root).
 
 ## 2026-02_group_exploration/  (group exploration, Feb 2026)
 - `BUNGEE.py`: RF + prediction entropy + SHAP at branch points.
@@ -20,3 +20,9 @@ Superseded work, kept for reference. Nothing here is used by the current pipelin
 
 Archived on 29 Oct 2026. Paths inside these notebooks still point to the old locations
 (e.g. `data/suberites_domuncula_cytotrace_SUB4.h5ad`), so they will not run unchanged.
+
+## 2026-11_benchmark_superseded/  (moved here 23 Nov 2026)
+Superseded code and runs of the driver benchmark, formerly `driver_benchmark/archive/`: earlier versions of
+`probe_interventional.py` (v1 dense, v2 before each ablation), first runs of the LARRY / Nestorowa / sponge
+scripts, a standalone figure script, the early easy BF networks (`data_easy/`) and old result files
+(superseded, not current results). Kept for reference only.

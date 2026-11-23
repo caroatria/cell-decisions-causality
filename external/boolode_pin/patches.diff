@@ -1,0 +1,73 @@
+diff --git a/BoolODE/run_experiment.py b/BoolODE/run_experiment.py
+index f40b54a..fb17273 100644
+--- a/BoolODE/run_experiment.py
++++ b/BoolODE/run_experiment.py
+@@ -155,7 +155,7 @@ def Experiment(mg, Model,
+         with mp.Pool() as pool:
+             jobs = []
+             for cellid in range(settings['num_cells']):
+-                cell_args = dict(argdict, seed=cellid, cellid=cellid)
++                cell_args = dict(argdict, seed=cellid + int(os.environ.get('BOOLODE_SEED_OFFSET', 0)), cellid=cellid)  # patched: replicate seeds
+                 job = pool.apply_async(simulateAndSample, args=(cell_args,))
+                 jobs.append(job)
+                 
+@@ -163,7 +163,7 @@ def Experiment(mg, Model,
+                 job.wait()
+     else:
+         for cellid in tqdm(range(settings['num_cells'])):
+-            argdict['seed'] = cellid
++            argdict['seed'] = cellid + int(os.environ.get('BOOLODE_SEED_OFFSET', 0))  # patched
+             argdict['cellid'] = cellid
+             simulateAndSample(argdict)
+ 
+@@ -197,8 +197,7 @@ def Experiment(mg, Model,
+         print('Clustering simulations...')
+         start = time.time()            
+         # Find clusters in the experiments
+-        clusterLabels= KMeans(n_clusters=settings['nClusters'],
+-                              n_jobs=8).fit(groupedDF.T.values).labels_
++        clusterLabels= KMeans(n_clusters=settings["nClusters"], n_init=10).fit(groupedDF.T.values).labels_  # patched: n_jobs removed (sklearn>=1.0)
+         print('Clustering took %0.3fs' % (time.time() - start))
+         clusterDF = pd.DataFrame(data=clusterLabels, index =\
+                                  groupedDF.columns, columns=['cl'])
+@@ -314,7 +313,7 @@ def simulateAndSample(argdict):
+     retry = True
+     trys = 0
+     ## timepoints
+-    tps = [i for i in range(1,len(tspan))]
++    tps = [i for i in range(1,len(tspan), int(os.environ.get('BOOLODE_THIN', 1)))]  # patched: keep every k-th time point (saves disk)
+     ## gene ids
+     gid = [i for i,n in varmapper.items() if 'x_' in n]
+     outPrefix = outPrefix + '/simulations/'
+@@ -333,7 +332,7 @@ def simulateAndSample(argdict):
+                           index=pd.Index(genelist),
+                           columns = ['E' + str(cellid) +'_' +str(i)\
+                                      for i in tps])
+-        df.to_csv(outPrefix + 'E' + str(cellid) + '.csv')        
++        df.to_csv(outPrefix + 'E' + str(cellid) + '.csv', float_format=os.environ.get('BOOLODE_FLOAT_FMT'))  # patched: optional rounding (saves disk)        
+         ## Heuristic:
+         ## If the largest value of a protein achieved in a simulation is
+         ## less than 10% of the y_max, drop the simulation.
+@@ -362,7 +361,7 @@ def simulateAndSample(argdict):
+             
+         trys += 1
+         # write to file
+-        df.to_csv(outPrefix + 'E' + str(cellid) + '.csv')
++        df.to_csv(outPrefix + 'E' + str(cellid) + '.csv', float_format=os.environ.get('BOOLODE_FLOAT_FMT'))  # patched: optional rounding (saves disk)
+         
+         if trys > 1:
+             print('try', trys)
+diff --git a/boolode.py b/boolode.py
+index 7e41cd4..89349d0 100644
+--- a/boolode.py
++++ b/boolode.py
+@@ -25,6 +25,9 @@ def parse_arguments():
+ 
+     return opts
+ 
++import os as _os, numpy as _np, random as _random
++_off=int(_os.environ.get('BOOLODE_SEED_OFFSET',0)); _np.random.seed(_off); _random.seed(_off)  # patched: seed parameter sampling
++
+ def main():
+     opts = parse_arguments()
+     config_file = opts.config

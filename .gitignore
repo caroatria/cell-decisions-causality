@@ -1,16 +1,16 @@
+# data: large or regenerated (see data/README.md)
 *.h5ad
-miki/*
-!miki/*.ipynb
-!miki/figs/suberites_domuncula_cytotrace_SUB4.h5ad
+/data/*
+!/data/README.md
+/sims/
+/cache/
+/logs/
+/tools/
+/external/BoolODE/
 
+# python / editors / OS
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
 .DS_Store
 *.swp
-__pycache__/
-.ipynb_checkpoints/
-driver_benchmark/LARRY/
-driver_benchmark/suberites_domuncula/
-driver_benchmark/nestorowa/
-driver_benchmark/data_tree*/
-driver_benchmark/sims/
-driver_benchmark/cache/
-driver_benchmark/logs/
